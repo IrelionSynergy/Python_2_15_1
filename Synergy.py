@@ -3,10 +3,9 @@ class Transport:
         self.name = name
         self.max_speed = max_speed
         self.mileage = mileage
+    def printLable(self):
+        print(f'Название автомобиля: {self.name} Скорость: {self.max_speed} Пробег: {self.mileage}')
 
-class Autobus(Transport):
-   def printLable(self):
-      print(f'Название автомобиля: {self.name} Скорость: {self.max_speed} Пробег: {self.mileage}')
 
-autobus = Autobus('Renaul Logan', 180, 12)
+autobus = Transport('Renaul Logan', 180, 12)
 autobus.printLable()
